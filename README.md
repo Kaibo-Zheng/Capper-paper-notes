@@ -36,8 +36,9 @@ A structured collection of research notes on multimodal large models, including 
 
 ### AI for Science
 
-<!-- | Paper | Venue | Note | -->
-<!-- |-------|-------|------| -->
+| Paper | Venue | Note |
+|-------|-------|------|
+| mRNABERT | Nature Communications 2025 | [AI4S/mRNABert](./AI4S/mRNABert/README.md) |
 
 ## License
 
