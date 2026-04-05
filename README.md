@@ -1,35 +1,36 @@
-# Capper Paper Notes
+# Capper's Paper Notes
 
-A structured collection of research notes on multimodal large models, including VLM, VLA, and AI for Science, with personal insights and critical analysis.
+A structured collection of research notes on multimodal large models, embodied AI, and AI for Science, with personal summaries and critical analysis.
 
 ## Categories
 
 | Category | Description |
 |----------|-------------|
-| **VLM** (Vision-Language Model) | 视觉语言模型相关论文，涵盖多模态理解、视觉问答、图文生成等 |
-| **VLA** (Vision-Language-Action) | 视觉-语言-动作模型，聚焦具身智能、机器人操控等 |
-| **AI for Science** | AI 在科学领域的应用，包括分子生成、蛋白质结构预测、科学发现等 |
+| **Multimodal Large Models (MLLMs)** | Research on large models that jointly process multiple modalities such as language, vision, audio, and video, including understanding, reasoning, and generation. |
+| **Embodied AI** | Research on agents that perceive, reason, and act in the physical or simulated world, including robotics, manipulation, navigation, and vision-language-action systems. |
+| **AI for Science (AI4S)** | Research on applying AI to scientific discovery, such as biomolecular modeling, drug discovery, materials science, and other science-focused tasks. |
 
 ## Note Format
 
-每篇笔记包含以下内容：
+Each note should ideally include:
 
-- **Paper Info** — 标题、作者、发表venue、年份、链接
-- **Motivation** — 论文要解决什么问题
-- **Method** — 核心方法概述
-- **Key Insights** — 个人理解与批判性分析
-- **Limitations & Future Work** — 不足与可能的改进方向
+- **Paper Info**: title, authors, venue, year, and links
+- **Abstract**: the original abstract or a concise summary in your own words
+- **Motivation**: what problem the paper is trying to solve
+- **Method**: a high-level summary of the core approach
+- **Key Insights**: personal understanding, takeaways, and critical analysis
+- **Limitations & Future Work**: weaknesses, open questions, and possible extensions
 
 ## Reading List
 
-> TODO: 持续更新中
+> TODO: keep expanding this list.
 
-### VLM
+### Multimodal Large Models
 
 <!-- | Paper | Venue | Note | -->
 <!-- |-------|-------|------| -->
 
-### VLA
+### Embodied AI
 
 <!-- | Paper | Venue | Note | -->
 <!-- |-------|-------|------| -->
