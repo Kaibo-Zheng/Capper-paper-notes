@@ -4,7 +4,7 @@
 This repository is currently a lightweight research-notes project:
 
 - `README.md`: project overview, note template, and reading-list sections.
-- `mRNABert.pdf`: reference paper asset.
+- Paper assets should be stored inside each paper folder (for example, `AI4S/mRNABert/paper.pdf`).
 - `LICENSE`: MIT license text.
 
 Keep new content organized by topic and paper. Prefer adding note files under a clear path such as `notes/<topic>/<paper-slug>.md` (for example, `notes/vlm/clip.md`) rather than placing many files at the root.
@@ -25,6 +25,7 @@ Use Markdown-first conventions:
 - Write concise, scannable sections with `#`/`##` headings.
 - Use fenced code blocks for commands and examples.
 - Prefer descriptive lowercase file names with hyphens (for example, `vision-transformer-notes.md`).
+- Use a unified PDF filename `paper.pdf` inside each paper directory (for example, `MLLM/CLIP/paper.pdf`).
 - Keep line wrapping readable and avoid mixing languages in a single bullet unless needed for clarity.
 
 ## Testing Guidelines

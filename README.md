@@ -1,4 +1,4 @@
-# Capper's Paper Notes
+﻿# Capper's Paper Notes
 
 A structured collection of research notes on multimodal large models, embodied AI, and AI for Science, with personal summaries and critical analysis.
 
@@ -27,20 +27,26 @@ Each note should ideally include:
 
 ### Multimodal Large Models
 
-<!-- | Paper | Venue | Note | -->
-<!-- |-------|-------|------| -->
+| Paper | Venue | Note |
+|-------|-------|------|
+| CLIP | ICML 2021 | [MLLM/CLIP](./MLLM/CLIP/README.md) |
+| Seq2Seq | NeurIPS 2014 | [MLLM/Seq2Seq_2014](./MLLM/Seq2Seq_2014/README.md) |
 
 ### Embodied AI
 
-<!-- | Paper | Venue | Note | -->
-<!-- |-------|-------|------| -->
+| Paper | Venue | Note |
+|-------|-------|------|
+| pi0.6: a VLA That Learns From Experience | arXiv 2025 | [VLA/pi0.6](./VLA/pi0.6/README.md) |
 
 ### AI for Science
 
 | Paper | Venue | Note |
 |-------|-------|------|
 | mRNABERT | Nature Communications 2025 | [AI4S/mRNABert](./AI4S/mRNABert/README.md) |
+| GEMORNA | Science 2025 | [AI4S/GEMORNA](./AI4S/GEMORNA/README.md) |
 
 ## License
 
 [MIT](./LICENSE)
+
+
