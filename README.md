@@ -1,14 +1,15 @@
 ﻿# Capper's Paper Notes
 
-A structured collection of research notes on multimodal large models, embodied AI, and AI for Science, with personal summaries and critical analysis.
+A structured collection of research notes on vision-language models, vision-language-action / embodied AI, NLP, and AI for Science, with personal insights and critical analysis.
 
 ## Categories
 
 | Category | Description |
 |----------|-------------|
-| **Multimodal Large Models (MLLMs)** | Research on large models that jointly process multiple modalities such as language, vision, audio, and video, including understanding, reasoning, and generation. |
-| **Embodied AI** | Research on agents that perceive, reason, and act in the physical or simulated world, including robotics, manipulation, navigation, and vision-language-action systems. |
+| **Vision-Language Models (VLMs)** | Research on models that jointly process vision and language, including representation learning, alignment, retrieval, and generation. |
+| **Vision-Language-Action / Embodied AI** | Research on agents that perceive, reason, and act in physical or simulated environments, including robotics, manipulation, navigation, and VLA systems. |
 | **AI for Science (AI4S)** | Research on applying AI to scientific discovery, such as biomolecular modeling, drug discovery, materials science, and other science-focused tasks. |
+| **Natural Language Processing (NLP)** | Research on language modeling, sequence transduction, machine translation, and other core NLP methods and systems. |
 
 ## Note Format
 
@@ -25,18 +26,17 @@ Each note should ideally include:
 
 > TODO: keep expanding this list.
 
-### Multimodal Large Models
+### Vision-Language Models
 
 | Paper | Venue | Note |
 |-------|-------|------|
-| CLIP | ICML 2021 | [MLLM/CLIP](./MLLM/CLIP/README.md) |
-| Seq2Seq | NeurIPS 2014 | [MLLM/Seq2Seq_2014](./MLLM/Seq2Seq_2014/README.md) |
+| CLIP | ICML 2021 | [VLM/CLIP](./VLM/CLIP/README.md) |
 
-### Embodied AI
+### Vision-Language-Action / Embodied AI
 
 | Paper | Venue | Note |
 |-------|-------|------|
-| pi0.6: a VLA That Learns From Experience | arXiv 2025 | [VLA/pi0.6](./VLA/pi0.6/README.md) |
+| pi0.6 | arXiv 2025 | [VLA/pi0.6](./VLA/pi0.6/README.md) |
 
 ### AI for Science
 
@@ -45,8 +45,16 @@ Each note should ideally include:
 | mRNABERT | Nature Communications 2025 | [AI4S/mRNABert](./AI4S/mRNABert/README.md) |
 | GEMORNA | Science 2025 | [AI4S/GEMORNA](./AI4S/GEMORNA/README.md) |
 
+### Natural Language Processing
+
+| Paper | Venue | Note |
+|-------|-------|------|
+| Seq2Seq | NeurIPS 2014 | [NLP/Seq2Seq](./NLP/Seq2Seq/README.md) |
+
 ## License
 
 [MIT](./LICENSE)
+
+
 
 

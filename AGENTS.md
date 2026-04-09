@@ -1,13 +1,14 @@
-# Repository Guidelines
+﻿# Repository Guidelines
 
 ## Project Structure & Module Organization
 This repository is currently a lightweight research-notes project:
 
 - `README.md`: project overview, note template, and reading-list sections.
 - Paper assets should be stored inside each paper folder (for example, `AI4S/mRNABert/paper.pdf`).
+- Top-level topic directories should stay semantically clear, such as `VLM/`, `VLA/`, `AI4S/`, and `NLP/`.
 - `LICENSE`: MIT license text.
 
-Keep new content organized by topic and paper. Prefer adding note files under a clear path such as `notes/<topic>/<paper-slug>.md` (for example, `notes/vlm/clip.md`) rather than placing many files at the root.
+Keep new content organized by topic and paper. Prefer paths such as `VLM/CLIP/README.md`, `VLA/pi0.6/README.md`, `AI4S/GEMORNA/README.md`, or `NLP/Seq2Seq/README.md` rather than placing many files at the root.
 
 ## Build, Test, and Development Commands
 There is no build system or automated test pipeline yet. Use lightweight repo checks:
@@ -24,8 +25,8 @@ Use Markdown-first conventions:
 
 - Write concise, scannable sections with `#`/`##` headings.
 - Use fenced code blocks for commands and examples.
-- Prefer descriptive lowercase file names with hyphens (for example, `vision-transformer-notes.md`).
-- Use a unified PDF filename `paper.pdf` inside each paper directory (for example, `MLLM/CLIP/paper.pdf`).
+- Prefer descriptive paper folder names and keep topic directories semantically accurate.
+- Use a unified PDF filename `paper.pdf` inside each paper directory (for example, `VLM/CLIP/paper.pdf`).
 - Keep line wrapping readable and avoid mixing languages in a single bullet unless needed for clarity.
 
 ## Testing Guidelines
@@ -45,3 +46,4 @@ Current history uses short messages (`init`, `Initial commit`), but new contribu
 
 ## Security & Content Notes
 Only commit papers or assets you are allowed to redistribute. For copyrighted material, prefer linking in notes instead of uploading binaries.
+
