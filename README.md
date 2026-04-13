@@ -42,8 +42,10 @@ Each note should ideally include:
 
 | Paper | Venue | Note |
 |-------|-------|------|
+| UTR-LM | Nature Machine Intelligence 2024 | [AI4S/UTR-LM](./AI4S/UTR-LM/README.md) |
 | mRNABERT | Nature Communications 2025 | [AI4S/mRNABert](./AI4S/mRNABert/README.md) |
 | GEMORNA | Science 2025 | [AI4S/GEMORNA](./AI4S/GEMORNA/README.md) |
+| DNA-Diffusion | Nature Genetics 2026 | [AI4S/DNA-Diffusion](./AI4S/DNA-Diffusion/README.md) |
 
 ### Natural Language Processing
 
