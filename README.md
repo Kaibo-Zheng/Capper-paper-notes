@@ -6,7 +6,7 @@ A structured collection of research notes on vision-language models, vision-lang
 
 | Category | Description |
 |----------|-------------|
-| **Vision-Language Models (VLMs)** | Research on models that jointly process vision and language, including representation learning, alignment, retrieval, and generation. |
+| **Multimodal Large Language Models (MLLMs)** | Research on large language models and their multimodal extensions, including scaling laws, vision-language alignment, representation learning, and generation. |
 | **Vision-Language-Action / Embodied AI** | Research on agents that perceive, reason, and act in physical or simulated environments, including robotics, manipulation, navigation, and VLA systems. |
 | **AI for Science (AI4S)** | Research on applying AI to scientific discovery, such as biomolecular modeling, drug discovery, materials science, and other science-focused tasks. |
 | **Natural Language Processing (NLP)** | Research on language modeling, sequence transduction, machine translation, and other core NLP methods and systems. |
@@ -26,11 +26,12 @@ Each note should ideally include:
 
 > TODO: keep expanding this list.
 
-### Vision-Language Models
+### Multimodal Large Language Models
 
 | Paper | Venue | Note |
 |-------|-------|------|
-| CLIP | ICML 2021 | [VLM/CLIP](./VLM/CLIP/README.md) |
+| CLIP | ICML 2021 | [MLLM/CLIP](./MLLM/CLIP/README.md) |
+| Densing Law of LLMs | Nature Machine Intelligence 2025 | [MLLM/DensingLaw](./MLLM/DensingLaw/README.md) |
 
 ### Vision-Language-Action / Embodied AI
 
