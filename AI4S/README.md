@@ -14,6 +14,7 @@ Rows are ordered roughly from earlier to later work.
 | UTR-LM | Nature Machine Intelligence 2024 | [NucleicAcid/UTR-LM](./NucleicAcid/UTR-LM/README.md) |
 | mRNABERT | Nature Communications 2025 | [NucleicAcid/mRNABert](./NucleicAcid/mRNABert/README.md) |
 | mRNA2vec | AAAI 2025 | [NucleicAcid/mRNA2vec](./NucleicAcid/mRNA2vec/README.md) |
+| CodonFM | Preprint 2025 | [NucleicAcid/CodonFM](./NucleicAcid/CodonFM/README.md) |
 | GEMORNA | Science 2025 | [NucleicAcid/GEMORNA](./NucleicAcid/GEMORNA/README.md) |
 | DNA-Diffusion | Nature Genetics 2026 | [NucleicAcid/DNA-Diffusion](./NucleicAcid/DNA-Diffusion/README.md) |
 | RMSAGen | AAAI 2026 | [NucleicAcid/RMSAGen](./NucleicAcid/RMSAGen/README.md) |

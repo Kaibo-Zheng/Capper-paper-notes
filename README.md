@@ -58,6 +58,7 @@ Ordered roughly from earlier to later work.
 | UTR-LM | Nature Machine Intelligence 2024 | [AI4S/NucleicAcid/UTR-LM](./AI4S/NucleicAcid/UTR-LM/README.md) |
 | mRNABERT | Nature Communications 2025 | [AI4S/NucleicAcid/mRNABert](./AI4S/NucleicAcid/mRNABert/README.md) |
 | mRNA2vec | AAAI 2025 | [AI4S/NucleicAcid/mRNA2vec](./AI4S/NucleicAcid/mRNA2vec/README.md) |
+| CodonFM | Preprint 2025 | [AI4S/NucleicAcid/CodonFM](./AI4S/NucleicAcid/CodonFM/README.md) |
 | GEMORNA | Science 2025 | [AI4S/NucleicAcid/GEMORNA](./AI4S/NucleicAcid/GEMORNA/README.md) |
 | DNA-Diffusion | Nature Genetics 2026 | [AI4S/NucleicAcid/DNA-Diffusion](./AI4S/NucleicAcid/DNA-Diffusion/README.md) |
 | RMSAGen | AAAI 2026 | [AI4S/NucleicAcid/RMSAGen](./AI4S/NucleicAcid/RMSAGen/README.md) |
