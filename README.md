@@ -50,6 +50,8 @@ Each note should ideally include:
 
 | Paper | Venue | Note |
 |-------|-------|------|
+| HEAL | Bioinformatics 2023 | [AI4S/HEAL](./AI4S/HEAL/README.md) |
+| GOBoost | Bioinformatics 2025 | [AI4S/GOBoost](./AI4S/GOBoost/README.md) |
 | UTR-LM | Nature Machine Intelligence 2024 | [AI4S/UTR-LM](./AI4S/UTR-LM/README.md) |
 | mRNABERT | Nature Communications 2025 | [AI4S/mRNABert](./AI4S/mRNABert/README.md) |
 | mRNA2vec | AAAI 2025 | [AI4S/mRNA2vec](./AI4S/mRNA2vec/README.md) |
@@ -68,5 +70,4 @@ Each note should ideally include:
 ## License
 
 [MIT](./LICENSE)
-
 
