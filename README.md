@@ -9,7 +9,7 @@ A structured collection of research notes on vision-language models, vision-lang
 | **Multimodal Large Language Models (MLLMs)** | Research on large language models and their multimodal extensions, including scaling laws, vision-language alignment, representation learning, and generation. |
 | **Vision-Language-Action / Embodied AI** | Research on agents that perceive, reason, and act in physical or simulated environments, including robotics, manipulation, navigation, and VLA systems. |
 | **AI Agents / Research Automation** | Research on autonomous agents, agentic workflows, tool use, automated experimentation, and research automation systems. |
-| **AI for Science (AI4S)** | Research on applying AI to scientific discovery, such as biomolecular modeling, drug discovery, materials science, and other science-focused tasks. |
+| **AI for Science (AI4S)** | Research on applying AI to scientific discovery, currently organized around nucleic acid and protein modeling/design. |
 | **Natural Language Processing (NLP)** | Research on language modeling, sequence transduction, machine translation, and other core NLP methods and systems. |
 
 ## Note Format
@@ -48,18 +48,29 @@ Each note should ideally include:
 
 ### AI for Science
 
+#### Nucleic Acid
+
+Ordered roughly from earlier to later work.
+
 | Paper | Venue | Note |
 |-------|-------|------|
-| HEAL | Bioinformatics 2023 | [AI4S/HEAL](./AI4S/HEAL/README.md) |
-| GOBoost | Bioinformatics 2025 | [AI4S/GOBoost](./AI4S/GOBoost/README.md) |
-| UTR-LM | Nature Machine Intelligence 2024 | [AI4S/UTR-LM](./AI4S/UTR-LM/README.md) |
-| mRNABERT | Nature Communications 2025 | [AI4S/mRNABert](./AI4S/mRNABert/README.md) |
-| mRNA2vec | AAAI 2025 | [AI4S/mRNA2vec](./AI4S/mRNA2vec/README.md) |
-| LinearDesign | Nature 2023 | [AI4S/LinearDesign](./AI4S/LinearDesign/README.md) |
-| GEMORNA | Science 2025 | [AI4S/GEMORNA](./AI4S/GEMORNA/README.md) |
-| DNA-Diffusion | Nature Genetics 2026 | [AI4S/DNA-Diffusion](./AI4S/DNA-Diffusion/README.md) |
-| RMSAGen | AAAI 2026 | [AI4S/RMSAGen](./AI4S/RMSAGen/README.md) |
-| SOLD | AAAI 2026 | [AI4S/SOLD](./AI4S/SOLD/README.md) |
+| LinearDesign | Nature 2023 | [AI4S/NucleicAcid/LinearDesign](./AI4S/NucleicAcid/LinearDesign/README.md) |
+| UTR-LM | Nature Machine Intelligence 2024 | [AI4S/NucleicAcid/UTR-LM](./AI4S/NucleicAcid/UTR-LM/README.md) |
+| mRNABERT | Nature Communications 2025 | [AI4S/NucleicAcid/mRNABert](./AI4S/NucleicAcid/mRNABert/README.md) |
+| mRNA2vec | AAAI 2025 | [AI4S/NucleicAcid/mRNA2vec](./AI4S/NucleicAcid/mRNA2vec/README.md) |
+| GEMORNA | Science 2025 | [AI4S/NucleicAcid/GEMORNA](./AI4S/NucleicAcid/GEMORNA/README.md) |
+| DNA-Diffusion | Nature Genetics 2026 | [AI4S/NucleicAcid/DNA-Diffusion](./AI4S/NucleicAcid/DNA-Diffusion/README.md) |
+| RMSAGen | AAAI 2026 | [AI4S/NucleicAcid/RMSAGen](./AI4S/NucleicAcid/RMSAGen/README.md) |
+| SOLD | AAAI 2026 | [AI4S/NucleicAcid/SOLD](./AI4S/NucleicAcid/SOLD/README.md) |
+
+#### Protein
+
+Ordered roughly from earlier to later work.
+
+| Paper | Venue | Note |
+|-------|-------|------|
+| HEAL | Bioinformatics 2023 | [AI4S/Protein/HEAL](./AI4S/Protein/HEAL/README.md) |
+| GOBoost | Bioinformatics 2025 | [AI4S/Protein/GOBoost](./AI4S/Protein/GOBoost/README.md) |
 
 ### Natural Language Processing
 
@@ -70,4 +81,3 @@ Each note should ideally include:
 ## License
 
 [MIT](./LICENSE)
-

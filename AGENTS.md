@@ -4,11 +4,11 @@
 This repository is currently a lightweight research-notes project:
 
 - `README.md`: project overview, note template, and reading-list sections.
-- Paper assets should be stored inside each paper folder (for example, `AI4S/mRNABert/paper.pdf`).
+- Paper assets should be stored inside each paper folder (for example, `AI4S/NucleicAcid/mRNABert/paper.pdf`).
 - Top-level topic directories should stay semantically clear, such as `VLM/`, `VLA/`, `AI4S/`, and `NLP/`.
 - `LICENSE`: MIT license text.
 
-Keep new content organized by topic and paper. Prefer paths such as `VLM/CLIP/README.md`, `VLA/pi0.6/README.md`, `AI4S/GEMORNA/README.md`, or `NLP/Seq2Seq/README.md` rather than placing many files at the root.
+Keep new content organized by topic and paper. Prefer paths such as `VLM/CLIP/README.md`, `VLA/pi0.6/README.md`, `AI4S/NucleicAcid/GEMORNA/README.md`, `AI4S/Protein/HEAL/README.md`, or `NLP/Seq2Seq/README.md` rather than placing many files at the root.
 
 ## Build, Test, and Development Commands
 There is no build system or automated test pipeline yet. Use lightweight repo checks:
