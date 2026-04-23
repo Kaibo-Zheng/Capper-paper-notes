@@ -205,5 +205,5 @@ Fig. 5 展示 `circRNA` 与 `CAR-T` 场景下的扩展结果。`A-B` 为 circRNA
 ## Notes
 
 - 本目录下主图无图注版本位于 [figures](./figures/)
-- 当前主文配图包括 `fig1.png` 至 `fig5.png`
+- 当前主文配图包括 `figures/fig1.png` 至 `figures/fig5.png`
 - 补充材料统一命名为 [supplementary_materials.pdf](./supplementary_materials.pdf)

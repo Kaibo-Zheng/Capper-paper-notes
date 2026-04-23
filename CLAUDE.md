@@ -18,7 +18,7 @@ NLP/          Natural Language Processing (e.g., Seq2Seq)
 Each paper lives in `<Topic>/<PaperName>/` containing:
 - `README.md` -- the reading notes
 - `paper.pdf` -- the paper PDF
-- Optional figures (`fig1.png`, etc.) referenced from the notes
+- Optional figures under `figures/` (for example, `figures/fig1.png`) referenced from the notes
 
 ## Note Format
 

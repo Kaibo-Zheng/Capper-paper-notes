@@ -46,7 +46,7 @@ LLM 的性能随参数量增长而提升，但这种 scaling 趋势正在变得�
 
 ### Extended Fig. 1：Reference Model 的 Scaling Curve 与性能映射
 
-![Extended Fig. 1](./e1.png)
+![Extended Fig. 1](./figures/e1.png)
 
 - **上半部分 (a)**：6 个 reference model（5M 到 800M）在 MMLU、BBH、MATH、MBPP、HumanEval 及均值上的 loss vs compute（6ND）曲线。每条线对应一个模型规模，loss 随 compute 平滑下降，且不同规模的曲线整齐排列，说明 scaling law 在这组模型上成立。
 - **下半部分 (b)**：从 loss 到下游 benchmark 性能的映射函数。红色三角为验证点，紫色曲线为拟合结果。这条曲线就是"标尺"——给定任意目标 LLM 的 benchmark 分数，可以反查它对应的 effective parameter size。
@@ -77,7 +77,7 @@ Nature MI 版本分析了自 Llama-1 发布以来的 **51** 个开源预训练 b
 
 ### 关键结果 1：Densing Law——能力密度指数增长
 
-![Fig. 1](./1.png)
+![Fig. 1](./figures/1.png)
 
 论文对 ρ_max（各时间点的最大能力密度）做指数拟合：
 
@@ -91,13 +91,13 @@ ln(ρ_max) = A·t + B
 
 ### 关键结果 2：推理时间基底的密度变体
 
-![Fig. 2](./2.png)
+![Fig. 2](./figures/2.png)
 
 这张图使用推理时间（而非参数量）作为密度基底，趋势线斜率 **A = 0.0066**。整体趋势与参数量基底版本一致，但 MoE 模型（如 Mixtral-8x22B）的相对位置会发生变化——因为 MoE 的总参数量大，但推理时激活参数少。这个变体对评估真实部署成本更有意义。
 
 ### 关键结果 3：ChatGPT 之后密度增速加快 50%
 
-![Fig. 3](./3.png)
+![Fig. 3](./figures/3.png)
 
 这张图包含三个关键子图：
 

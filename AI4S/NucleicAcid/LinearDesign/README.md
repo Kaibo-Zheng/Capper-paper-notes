@@ -60,7 +60,7 @@ Fig. 5 用 VZV gE 验证方法不是 spike-specific。
 
 ### Fig. 1：问题设定与算法直觉
 
-![Fig. 1](./1.png)
+![Fig. 1](./figures/1.png)
 
 #### Fig. 1a：为什么 mRNA 设计空间会爆炸
 
@@ -124,7 +124,7 @@ LinearDesign 不是只改 codon，也不是只追求稳定性，
 
 ### Fig. 2：DFA 和 lattice parsing 如何落到 mRNA 设计
 
-![Fig. 2](./2.png)
+![Fig. 2](./figures/2.png)
 
 #### Fig. 2a：每个氨基酸对应一个 codon DFA
 
@@ -178,7 +178,7 @@ CAI 通过 weighted DFA 的边权进入同一个动态规划框架。
 
 ### Fig. 3：MFE-CAI 设计边界与计算效率
 
-![Fig. 3](./3.png)
+![Fig. 3](./figures/3.png)
 
 #### Fig. 3a：运行时间随序列长度的变化
 
@@ -239,7 +239,7 @@ MFE 最低，配对比例约 83%，结构最紧凑。
 
 ### Fig. 4：COVID-19 spike mRNA 实验验证
 
-![Fig. 4](./4.png)
+![Fig. 4](./figures/4.png)
 
 #### Fig. 4a：把 spike 实验候选放回 MFE-CAI 空间
 
@@ -330,7 +330,7 @@ H 的反应较弱。
 
 ### Fig. 5：VZV gE mRNA 的泛化验证
 
-![Fig. 5](./5.png)
+![Fig. 5](./figures/5.png)
 
 #### Fig. 5a：VZV gE 的 MFE-CAI 空间和实验总结
 
@@ -497,6 +497,6 @@ Fig. 3 里很清楚地展示了 `MFE` 和 `CAI` 的二维设计空间。
 
 ## Notes
 
-- 当前目录主图为 [1.png](./1.png) 到 [5.png](./5.png)，对应论文主文 Fig. 1 到 Fig. 5。
-- `e1.png` 到 `e8.png` 为 Extended Data figures。
+- 当前目录主图为 [figures/1.png](./figures/1.png) 到 [figures/5.png](./figures/5.png)，对应论文主文 Fig. 1 到 Fig. 5。
+- `figures/e1.png` 到 `figures/e8.png` 为 Extended Data figures。
 - 当前主文 PDF 为 [paper.pdf](./paper.pdf)。

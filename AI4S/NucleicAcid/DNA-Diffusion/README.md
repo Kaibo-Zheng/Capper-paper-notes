@@ -63,7 +63,7 @@
 
 ### Fig. 1：整篇论文的工作流总览
 
-![Fig. 1](./1.png)
+![Fig. 1](./figures/1.png)
 
 - 这张图把整篇论文压缩成一条完整流水线：
   `DHS 数据 -> 条件扩散生成 -> in silico 评估 -> STARR-seq -> AXIN2 内源验证 -> benchmarking`
@@ -73,7 +73,7 @@
 
 ### Fig. 2：证明模型没有背训练集，同时学到了 motif grammar
 
-![Fig. 2](./2.png)
+![Fig. 2](./figures/2.png)
 
 - 这张图先回答一个基础问题：生成序列是不是只是训练集拷贝。
 - 序列比对结果显示：
@@ -89,7 +89,7 @@
 
 ### Fig. 3：in silico replacement 证明生成序列具有目标细胞特异活性
 
-![Fig. 3](./3.png)
+![Fig. 3](./figures/3.png)
 
 - 这张图把生成序列插入到 `GATA1 / HNF4A / CD19` 等基因相关 enhancer 区域，
   再用 `ChromBPNet`、`Enformer` 和 MPRA predictor 评估效果。
@@ -105,7 +105,7 @@
 
 ### Fig. 4：作者如何定义并筛选“高活性 + 高特异性”序列
 
-![Fig. 4](./4.png)
+![Fig. 4](./figures/4.png)
 
 - 这张图引入了全文后面反复使用的两个核心量：
   - `signal intensity`
@@ -120,7 +120,7 @@
 
 ### Fig. 5：STARR-seq 实验把 in silico 结果落到真实 reporter assay
 
-![Fig. 5](./5.png)
+![Fig. 5](./figures/5.png)
 
 - 作者构建了一个 **5,850** 元件的 `STARR-seq` 文库，
   在 `K562 / HepG2 / GM12878` 三个细胞系中统一测量活性。
@@ -136,7 +136,7 @@
 
 ### Fig. 6：AXIN2 内源位点验证是整篇论文最硬的一步
 
-![Fig. 6](./6.png)
+![Fig. 6](./figures/6.png)
 
 - 这张图测试的是：设计出的序列能不能在真正的基因组环境里调控目标基因。
 - 作者选择了白血病保护相关基因 `AXIN2`，并用 `EXTRA-seq` 在 MEC-1 细胞里做内源验证。
@@ -152,7 +152,7 @@
 
 ### Fig. 7：和现有方法相比，DNA-Diffusion 的强项是可调和平衡
 
-![Fig. 7](./7.png)
+![Fig. 7](./figures/7.png)
 
 - 这张图把 `DNA-Diffusion`、`GAN`、`DeepMEL`、`CODA` 放到统一框架里比较：
   `signal intensity`、`signal specificity`、`motif diversity`
@@ -288,5 +288,5 @@
 
 ## Notes
 
-- 当前目录主图为 [1.png](./1.png) 到 [7.png](./7.png)，对应论文主文 Fig. 1 到 Fig. 7。
+- 当前目录主图为 [figures/1.png](./figures/1.png) 到 [figures/7.png](./figures/7.png)，对应论文主文 Fig. 1 到 Fig. 7。
 - 当前主文 PDF 为 [paper.pdf](./paper.pdf)。

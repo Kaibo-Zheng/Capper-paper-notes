@@ -24,7 +24,7 @@
 
 作者的方法可以拆成四层：
 
-![Fig. 1](./1.png)
+![Fig. 1](./figures/1.png)
 
 Fig. 1 给出了整条路线：先用 5'UTR 序列、二级结构和 MFE 信息预训练一个
 Transformer encoder，再把 `[CLS]` 表征迁移到功能预测任务，最后用模型筛选新的
@@ -56,7 +56,7 @@ Transformer encoder，再把 `[CLS]` 表征迁移到功能预测任务，最后�
 
 ### 关键结果 1（Fig. 6）：5'UTR 可以被统一表示，而不只是手工特征堆出来
 
-![Fig. 6](./6.png)
+![Fig. 6](./figures/6.png)
 
 - 论文显示，UTR-LM 的 embedding 能区分 5 个物种，并比简单的 `4-mer` 表示更好地承载 MFE 信息。
 - Fig. 6 里的 sequence logo、silhouette score 和 UMAP 从三个角度说明：
@@ -65,7 +65,7 @@ Transformer encoder，再把 `[CLS]` 表征迁移到功能预测任务，最后�
   - 高分区域对 **Kozak consensus sequence** 敏感；
   - `uATG` 在低表达序列中更常见，符合上游开放阅读框干扰主翻译起始的生物学直觉。
 
-![Extended Data Fig. 1](./e1.png)
+![Extended Data Fig. 1](./figures/e1.png)
 
 Extended Data Fig. 1 对应 attention motif 的计算流程：作者先聚合不同 layer/head
 的 attention 矩阵，再从高 attention 片段里筛选潜在 motif。
@@ -76,7 +76,7 @@ Extended Data Fig. 1 对应 attention motif 的计算流程：作者先聚合不
 
 ### 关键结果 2（Fig. 2）：在 MRL 预测上，UTR-LM 把“基础模型迁移”做成了有效方案
 
-![Fig. 2](./2.png)
+![Fig. 2](./figures/2.png)
 
 - 在 8 个随机 50 bp 5'UTR 文库上，`UTR-LM MRL` 一直优于现有方法。
 - Fig. 2 先做模型变体和训练策略消融，再比较不同 predictor 与不同 baseline，
@@ -91,7 +91,7 @@ Extended Data Fig. 1 对应 attention motif 的计算流程：作者先聚合不
 
 ### 关键结果 3（Fig. 3）：同一套表示也能迁移到 TE 和 mRNA expression
 
-![Fig. 3](./3.png)
+![Fig. 3](./figures/3.png)
 
 - 在肌肉组织、PC3 和 HEK293T 三个内源数据集上，
   `UTR-LM TE / UTR-LM EL` 的表现与强手工特征模型 `Cao-RF` 持平或更优。
@@ -107,7 +107,7 @@ Extended Data Fig. 1 对应 attention motif 的计算流程：作者先聚合不
 
 ### 关键结果 4（Fig. 4）：模型不仅能回归表达，还能识别 IRES
 
-![Fig. 4](./4.png)
+![Fig. 4](./figures/4.png)
 
 - 作者构建了一个包含 **46,774** 条序列的 IRES 数据集，
   其中 `9,172` 条为 IRES，`37,602` 条为 non-IRES。
@@ -119,7 +119,7 @@ Extended Data Fig. 1 对应 attention motif 的计算流程：作者先聚合不
 
 ### 关键结果 5（Fig. 5）：它已经开始触到“设计”而不只是“预测”
 
-![Fig. 5](./5.png)
+![Fig. 5](./figures/5.png)
 
 - 作者基于模型设计了 **211** 条高预测翻译效率的 5'UTR，并做了 luciferase wet-lab 验证。
 - 其中表现最好的序列，相比治疗 mRNA 场景常用的 `NCA-7d-5'UTR`，
@@ -153,6 +153,6 @@ Extended Data Fig. 1 对应 attention motif 的计算流程：作者先聚合不
 
 ## Notes
 
-- 当前目录主图为 [1.png](./1.png) 到 [6.png](./6.png)，对应论文主文 Fig. 1 到 Fig. 6。
-- [e1.png](./e1.png) 对应 Extended Data Fig. 1，用于说明 attention motif 分析流程。
+- 当前目录主图为 [figures/1.png](./figures/1.png) 到 [figures/6.png](./figures/6.png)，对应论文主文 Fig. 1 到 Fig. 6。
+- [figures/e1.png](./figures/e1.png) 对应 Extended Data Fig. 1，用于说明 attention motif 分析流程。
 - 当前主文 PDF 为 [paper.pdf](./paper.pdf)。

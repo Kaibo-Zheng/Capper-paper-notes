@@ -24,7 +24,7 @@ CLIP 的核心想法是把监督信号从“人工类别标签”切换到“互
 
 ### 图 1：CLIP 整体流程
 
-![fig1](./fig1.png)
+![fig1](./figures/fig1.png)
 
 > Figure 1 展示了 CLIP 的三个阶段：(1) 对比预训练；(2) 从类别标签生成文本分类器；(3) 零样本推理。
 
@@ -43,7 +43,7 @@ CLIP 的核心想法是把监督信号从“人工类别标签”切换到“互
 
 ### 图 2：对比目标 vs 预测目标的训练效率
 
-![fig2](./fig2.png)
+![fig2](./figures/fig2.png)
 
 > 对比学习目标比"直接预测文本"高效得多：达到相同零样本精度，对比目标只需约 **1/4** 的训练图片。
 
@@ -58,7 +58,7 @@ CLIP 的核心想法是把监督信号从“人工类别标签”切换到“互
 
 ### 图 3：Numpy 风格伪代码
 
-![fig3](./fig3.png)
+![fig3](./figures/fig3.png)
 
 > 论文给出的核心实现伪代码，清晰展示了对比损失的计算流程。
 
@@ -75,7 +75,7 @@ loss   = (CE(logits, labels, axis=0) + CE(logits, labels, axis=1)) / 2
 
 ### 图 4：零样本 CLIP vs 全监督线性分类器
 
-![fig4](./fig4.png)
+![fig4](./figures/fig4.png)
 
 > 在 27 个数据集上，零样本 CLIP 在 **16/27** 个任务上超过 ResNet-50 特征 + 全监督线性分类器。在 Stanford Cars、Food101 等细粒度任务上优势尤其明显。
 
@@ -86,13 +86,13 @@ loss   = (CE(logits, labels, axis=0) + CE(logits, labels, axis=1)) / 2
 
 ### 图 5：零样本 CLIP vs Few-shot 线性探针
 
-![fig5](./fig5.png)
+![fig5](./figures/fig5.png)
 
 > 零样本 CLIP 匹配 4-shot 线性分类器的平均表现，接近 16-shot 的最佳结果。这说明语言监督学到的表征质量极高。
 
 ### 图 6：CLIP 线性探针 vs SOTA 视觉模型
 
-![fig6](./fig6.png)
+![fig6](./figures/fig6.png)
 
 > CLIP 的表征在线性探针评估中全面超越 EfficientNet、BiT、SimCLRv2 等 SOTA 模型，且在相同计算量下表现最优。ViT 架构的 CLIP 在两个评估集上均占据帕累托前沿。
 
@@ -102,7 +102,7 @@ loss   = (CE(logits, labels, axis=0) + CE(logits, labels, axis=1)) / 2
 
 ### 图 7：分布偏移鲁棒性
 
-![fig7](./fig7.png)
+![fig7](./figures/fig7.png)
 
 > 零样本 CLIP 在自然分布偏移下远比标准 ImageNet 模型鲁棒，将”鲁棒性差距”缩小了多达 75%。右侧展示了同一类别在不同分布偏移数据集上的样本对比。
 
@@ -139,4 +139,3 @@ loss   = (CE(logits, labels, axis=0) + CE(logits, labels, axis=1)) / 2
 1. 提升数据与训练效率，降低 web-scale 预训练门槛。
 2. 让“零样本到少样本”过渡更平滑，减少 few-shot 反直觉性能下降。
 3. 强化偏差评估与安全约束，把“可用”变成“可控可审计”。
-
