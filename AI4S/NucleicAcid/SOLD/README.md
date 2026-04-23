@@ -45,6 +45,12 @@
 这个 LDM 的作用是先建立一个强生成基座，
 让模型能从 3D backbone 条件中恢复合理 RNA 序列。
 
+#### Figure 1: latent diffusion inverse folding 框架
+
+![SOLD Figure 1](./figures/fig1.png)
+
+这张图描述 SOLD 的生成模型底座。左侧先用 `RNA-FM` 把 RNA 序列编码成 embedding，再通过 latent encoder 压缩到 latent space。中间的 diffusion process 在 latent space 中加噪和去噪，去噪网络由 `DiT Block` 和结构条件共同驱动。右侧 `GVP-GNN` 负责把 RNA backbone 的三维几何信息编码进模型，最后 latent decoder 输出 A/U/G/C 的碱基概率。核心思想是：不要直接在 one-hot 序列空间扩散，而是在 RNA-FM 提供的连续 latent space 里做结构条件生成。
+
 ### 2. Step-wise RL Optimization
 
 传统 diffusion RL 往往需要采样完整反向轨迹，代价高。
@@ -59,63 +65,23 @@
 这样可以直接优化不可微结构指标，
 同时避免每次都跑完整 diffusion trajectory。
 
-## Main Figures and Tables
-
-> 下列图表由 PDF 页面重新裁剪得到，只保留图表主体，未包含原论文图注文字。
-
-### Figure 1: latent diffusion inverse folding 框架
-
-![SOLD Figure 1](./figures/fig1.png)
-
-这张图描述 SOLD 的生成模型底座。左侧先用 `RNA-FM` 把 RNA 序列编码成 embedding，再通过 latent encoder 压缩到 latent space。中间的 diffusion process 在 latent space 中加噪和去噪，去噪网络由 `DiT Block` 和结构条件共同驱动。右侧 `GVP-GNN` 负责把 RNA backbone 的三维几何信息编码进模型，最后 latent decoder 输出 A/U/G/C 的碱基概率。核心思想是：不要直接在 one-hot 序列空间扩散，而是在 RNA-FM 提供的连续 latent space 里做结构条件生成。
-
-### Figure 2: SOLD 的 step-wise reward optimization
+#### Figure 2: SOLD 的 step-wise reward optimization
 
 ![SOLD Figure 2](./figures/fig2.png)
 
 这张图是 SOLD 区别于普通 diffusion RL 的关键。传统做法往往要完整跑完一条反向 denoising trajectory 后再算 reward，成本很高；SOLD 随机选择一个 timestep，在该步附近做 one-step sample，解码成序列后直接交给 reward calculator。右侧 reward 包括 `MFE by ViennaRNA`、`SS by ViennaRNA`、`LDDT by RhoFold`。图里的 long-term reward feedback 和 short-term reward feedback 表示模型会同时利用最终去噪结果和中间去噪结果的奖励信号，从而降低优化成本。
-
-### Table 1: RL fine-tuning 前的 LDM 生成底座
-
-![SOLD Table 1](./figures/table1.png)
-
-这张表比较不同 RNA inverse folding 方法的 `Sequence Recovery` 和 `NT Recovery`。`LDM` 在 `SOLD TEST` 和 `CASP15 TEST` 上都取得最高或接近最高的恢复率，说明作者先训练出的 latent diffusion backbone 已经是一个强基线。后续 SOLD 的 RL 优化不是从弱模型开始补救，而是在一个已有较强序列恢复能力的生成模型上继续优化结构目标。
-
-### Figure 3: 三个单目标 reward 的训练曲线
-
-![SOLD Figure 3](./figures/fig3.png)
-
-三张子图分别对应 `MFE`、`SS`、`LDDT` 作为 reward 时的训练过程。蓝色是 SOLD，橙色是 DPOK，绿色是 DDPO。可以看到 SOLD 通常更快达到高 reward 区间，尤其在 MFE 和 LDDT 上收敛更明显。这个图支持 step-wise 优化的实用价值：它不只是省时间，也能给出稳定的优化信号。
-
-### Table 2: single-objective reward 对比
-
-![SOLD Table 2](./figures/table2.png)
-
-表格把单目标优化结果拆成三组：`MFE Training`、`SS Training` 和 `LDDT Training`。MFE 旁边是向下箭头，表示越低越好；SS 和 LDDT 是向上箭头，表示越高越好。SOLD 在多数组合上达到最好或接近最好的结果，尤其在 CASP15 TEST 的 SS 和 LDDT 上体现出优势。这说明 SOLD 能直接优化不可微的结构指标，而不是只追求序列恢复率。
-
-### Table 3: 单 epoch 训练时间
-
-![SOLD Table 3](./figures/table3.png)
-
-这张表说明 step-wise optimization 的效率收益。MFE 和 SS 任务上，SOLD 的单 epoch 时间只有几百秒，而 DDPO / DPOK 是几千秒。LDDT 仍然比较慢，因为它依赖结构预测和评估，但 SOLD 仍明显快于完整轨迹式 RL。也就是说，SOLD 的主要工程价值是减少 reward optimization 的采样成本。
-
-### Table 4: multi-objective optimization 对比
-
-![SOLD Table 4](./figures/table4.png)
-
-真实 RNA 设计通常不会只关心一个指标，所以这张表同时比较 `Sequence Recovery`、`MFE`、`SS`、`RMSD`、`LDDT`。SOLD 在 `SOLD TEST` 和 `CASP15 TEST` 上都取得比较均衡的结果：序列恢复率保持较高，同时 MFE、SS、RMSD、LDDT 也有提升。这个表的意义是证明 SOLD 可以做多目标折中，而不是只把单个 reward 刷高。
-
-### Figure 4: PDB 3D2V case study
-
-![SOLD Figure 4](./figures/fig4.png)
-
-这张图用 `PDB: 3D2V` 做具体结构案例。上方给出 organism、chain 和序列长度；中间比较 SOLD、LDM、DRAKES、RiboDiffusion、gRNAde、RDesign、RhoDesign 的设计结构；下方列出每个方法的 sequence recovery、SS、MFE、RMSD、LDDT。SOLD 的结构和目标结构叠合得更近，指标也更均衡，说明它的 reward 优化确实能反映到具体三维结构设计上，而不只是表格平均数上的提升。
 
 ## Key Insights
 
 ### 关键结果 1：RNA-FM latent space 让 LDM 成为强生成基座
 
 在 RL fine-tuning 之前，论文先比较 LDM 的 sequence recovery。
+
+#### Table 1: RL fine-tuning 前的 LDM 生成底座
+
+![SOLD Table 1](./figures/table1.png)
+
+这张表比较不同 RNA inverse folding 方法的 `Sequence Recovery` 和 `NT Recovery`。`LDM` 在 `SOLD TEST` 和 `CASP15 TEST` 上都取得最高或接近最高的恢复率，说明作者先训练出的 latent diffusion backbone 已经是一个强基线。后续 SOLD 的 RL 优化不是从弱模型开始补救，而是在一个已有较强序列恢复能力的生成模型上继续优化结构目标。
 
 `SOLD TEST` 上：
 
@@ -133,6 +99,18 @@
 ### 关键结果 2：单目标 RL 能直接优化 MFE、SS 和 LDDT
 
 在单目标优化中，SOLD 对三个指标都能提升 LDM baseline。
+
+#### Figure 3: 三个单目标 reward 的训练曲线
+
+![SOLD Figure 3](./figures/fig3.png)
+
+三张子图分别对应 `MFE`、`SS`、`LDDT` 作为 reward 时的训练过程。蓝色是 SOLD，橙色是 DPOK，绿色是 DDPO。可以看到 SOLD 通常更快达到高 reward 区间，尤其在 MFE 和 LDDT 上收敛更明显。这个图支持 step-wise 优化的实用价值：它不只是省时间，也能给出稳定的优化信号。
+
+#### Table 2: single-objective reward 对比
+
+![SOLD Table 2](./figures/table2.png)
+
+表格把单目标优化结果拆成三组：`MFE Training`、`SS Training` 和 `LDDT Training`。MFE 旁边是向下箭头，表示越低越好；SS 和 LDDT 是向上箭头，表示越高越好。SOLD 在多数组合上达到最好或接近最好的结果，尤其在 CASP15 TEST 的 SS 和 LDDT 上体现出优势。这说明 SOLD 能直接优化不可微的结构指标，而不是只追求序列恢复率。
 
 代表性结果：
 
@@ -153,6 +131,12 @@
 
 论文报告的单 epoch 平均训练时间显示：
 
+#### Table 3: 单 epoch 训练时间
+
+![SOLD Table 3](./figures/table3.png)
+
+这张表说明 step-wise optimization 的效率收益。MFE 和 SS 任务上，SOLD 的单 epoch 时间只有几百秒，而 DDPO / DPOK 是几千秒。LDDT 仍然比较慢，因为它依赖结构预测和评估，但 SOLD 仍明显快于完整轨迹式 RL。也就是说，SOLD 的主要工程价值是减少 reward optimization 的采样成本。
+
 - `MFE`: SOLD **256 s**，DDPO **5953 s**，DPOK **7677 s**
 - `SS`: SOLD **263 s**，DDPO **6190 s**，DPOK **7330 s**
 - `LDDT`: SOLD **6900 s**，DDPO **14000 s**，DPOK **14200 s**
@@ -166,6 +150,12 @@ LDDT 仍然较慢，主要瓶颈来自结构预测和评估，
 真实 RNA 设计不能只看单个指标。
 论文用 equal weighting 同时优化 `SS / MFE / LDDT`，
 并比较 sequence recovery、MFE、SS、RMSD、LDDT。
+
+#### Table 4: multi-objective optimization 对比
+
+![SOLD Table 4](./figures/table4.png)
+
+真实 RNA 设计通常不会只关心一个指标，所以这张表同时比较 `Sequence Recovery`、`MFE`、`SS`、`RMSD`、`LDDT`。SOLD 在 `SOLD TEST` 和 `CASP15 TEST` 上都取得比较均衡的结果：序列恢复率保持较高，同时 MFE、SS、RMSD、LDDT 也有提升。这个表的意义是证明 SOLD 可以做多目标折中，而不是只把单个 reward 刷高。
 
 `SOLD TEST` 上：
 
@@ -192,6 +182,12 @@ LDDT 仍然较慢，主要瓶颈来自结构预测和评估，
 论文用 `PDB: 3D2V` 做了一个 TPP-specific riboswitch 的设计案例。
 结果显示 SOLD 设计出的序列能折叠到目标结构附近，
 而其他方法产生的构象明显偏离目标。
+
+#### Figure 4: PDB 3D2V case study
+
+![SOLD Figure 4](./figures/fig4.png)
+
+这张图用 `PDB: 3D2V` 做具体结构案例。上方给出 organism、chain 和序列长度；中间比较 SOLD、LDM、DRAKES、RiboDiffusion、gRNAde、RDesign、RhoDesign 的设计结构；下方列出每个方法的 sequence recovery、SS、MFE、RMSD、LDDT。SOLD 的结构和目标结构叠合得更近，指标也更均衡，说明它的 reward 优化确实能反映到具体三维结构设计上，而不只是表格平均数上的提升。
 
 这个例子说明 step-wise RL 优化的收益不仅反映在平均指标上，
 也能在具体结构设计任务中产生可见差异。
