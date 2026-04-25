@@ -11,6 +11,7 @@ A structured collection of research notes on vision-language models, vision-lang
 | **AI Agents / Research Automation** | Research on autonomous agents, agentic workflows, tool use, automated experimentation, and research automation systems. |
 | **AI for Science (AI4S)** | Research on applying AI to scientific discovery, currently organized around nucleic acid and protein modeling/design. |
 | **Natural Language Processing (NLP)** | Research on language modeling, sequence transduction, machine translation, and other core NLP methods and systems. |
+| **Research Practice** | Notes on research workflow, academic writing, collaboration, and day-to-day execution. |
 
 ## Note Format
 
@@ -22,6 +23,93 @@ Each note should ideally include:
 - **Method**: a high-level summary of the core approach
 - **Key Insights**: personal understanding, takeaways, and critical analysis
 - **Limitations & Future Work**: weaknesses, open questions, and possible extensions
+
+## Research Practice
+
+> 来源：曾哥会议记录。这里整理为科研方法论备忘，作为读论文、做实验、写论文之外的通用工作准则。
+
+### 科研特性
+
+- 好奇心
+- 自驱力
+- 洞察力
+- 坚持
+- 努力
+- 卷
+
+### 科研能力
+
+- 代码能力
+- 英语阅读
+- 抗压能力
+- 数理基础
+- 归纳总结
+- 辩证能力
+- 创新思维
+- 实践能力
+- 写作能力
+- 持续学习
+
+### 科研步骤
+
+1. 选定方向。
+2. 阅读文章。
+3. 寻找 idea：大胆猜测，小心求证。
+4. 实验验证。
+5. 写文章投稿。
+
+### 科研目标
+
+- 顶会。
+- 顶刊。
+
+### 学术写作规则
+
+- 写作目的：接受。
+- 写作要讲究效率。
+
+### 论文结构
+
+论文的基本结构通常包括：
+
+- title
+- abstract
+- introduction
+- related work
+- proposed method
+- experiment
+
+写作和实验展示时重点关注：
+
+- 模型性能。
+- 推理速度。
+- 总结好的词汇和表达。
+- 期刊摘要可以长一些。
+- 多参考最佳论文，尤其是 oral 论文。
+
+### 日常工作节奏
+
+- 早起罗列小任务。
+- 上午做输入型工作。
+- 下午做产出型工作。
+- 睡前复盘。
+
+### 如何寻找 Idea
+
+基本路径：
+
+1. 发现问题。
+2. 设计方案。
+3. 进行实验。
+
+注意：完成上一步之前，不应该开始下一步。
+
+### 研究方法提醒
+
+- 做 survey。
+- 从树中总结规律。
+
+> 纸上得来终觉浅，绝知此事要躬行。
 
 ## Reading List
 
@@ -47,6 +135,7 @@ Each note should ideally include:
 
 | Paper | Venue | Note |
 |-------|-------|------|
+| ReAct | ICLR 2023 | [Agents/ReAct](./Agents/ReAct/README.md) |
 | AI Scientist | Nature 2026 | [Agents/AI-Scientist](./Agents/AI-Scientist/README.md) |
 
 ### AI for Science
