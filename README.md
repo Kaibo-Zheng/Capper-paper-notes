@@ -31,6 +31,9 @@ Each note should ideally include:
 
 | Paper | Venue | Note |
 |-------|-------|------|
+| GAN | NeurIPS 2014 | [MLLM/GAN](./MLLM/GAN/README.md) |
+| Transformer | NeurIPS 2017 | [MLLM/Transformer](./MLLM/Transformer/README.md) |
+| RAG | NeurIPS 2020 | [MLLM/RAG](./MLLM/RAG/README.md) |
 | CLIP | ICML 2021 | [MLLM/CLIP](./MLLM/CLIP/README.md) |
 | Densing Law of LLMs | Nature Machine Intelligence 2025 | [MLLM/DensingLaw](./MLLM/DensingLaw/README.md) |
 
