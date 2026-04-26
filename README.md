@@ -1,6 +1,6 @@
 ﻿# Capper's Paper Notes
 
-A structured collection of research notes on vision-language models, vision-language-action / embodied AI, AI agents, NLP, and AI for Science, with personal insights and critical analysis.
+A structured collection of research notes on vision-language models, vision-language-action / embodied AI, AI agents, reinforcement learning, NLP, and AI for Science, with personal insights and critical analysis.
 
 ## Categories
 
@@ -9,6 +9,7 @@ A structured collection of research notes on vision-language models, vision-lang
 | **Multimodal Large Language Models (MLLMs)** | Research on large language models and their multimodal extensions, including scaling laws, vision-language alignment, representation learning, and generation. |
 | **Vision-Language-Action / Embodied AI** | Research on agents that perceive, reason, and act in physical or simulated environments, including robotics, manipulation, navigation, and VLA systems. |
 | **AI Agents / Research Automation** | Research on autonomous agents, agentic workflows, tool use, automated experimentation, and research automation systems. |
+| **Reinforcement Learning (RL)** | Research on learning policies through interaction, value estimation, exploration, and decision-making systems. |
 | **AI for Science (AI4S)** | Research on applying AI to scientific discovery, currently organized around nucleic acid and protein modeling/design. |
 | **Natural Language Processing (NLP)** | Research on language modeling, sequence transduction, machine translation, and other core NLP methods and systems. |
 | **Research Practice** | Notes on research workflow, academic writing, collaboration, and day-to-day execution. |
@@ -137,6 +138,12 @@ Each note should ideally include:
 |-------|-------|------|
 | ReAct | ICLR 2023 | [Agents/ReAct](./Agents/ReAct/README.md) |
 | AI Scientist | Nature 2026 | [Agents/AI-Scientist](./Agents/AI-Scientist/README.md) |
+
+### Reinforcement Learning
+
+| Paper | Venue | Note |
+|-------|-------|------|
+| DQN | Nature 2015 | [RL/DQN](./RL/DQN/README.md) |
 
 ### AI for Science
 
