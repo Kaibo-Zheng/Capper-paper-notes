@@ -150,6 +150,7 @@ Each note should ideally include:
 #### Nucleic Acid
 
 Ordered roughly from earlier to later work.
+Common mRNA metrics note: [AI4S/NucleicAcid/README.md](./AI4S/NucleicAcid/README.md).
 
 | Paper | Venue | Note |
 |-------|-------|------|

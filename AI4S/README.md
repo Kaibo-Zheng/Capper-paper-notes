@@ -6,6 +6,7 @@ Current notes are split into nucleic acid and protein papers.
 ## Nucleic Acid
 
 This group covers RNA, mRNA, DNA regulatory elements, and functional RNA design.
+Common mRNA metrics note: [NucleicAcid/README.md](./NucleicAcid/README.md).
 Rows are ordered roughly from earlier to later work.
 
 | Paper | Venue | Note |
