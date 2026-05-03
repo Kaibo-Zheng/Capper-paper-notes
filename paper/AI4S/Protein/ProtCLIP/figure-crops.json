@@ -1,0 +1,66 @@
+{
+  "pdf": "paper.pdf",
+  "output_dir": "figures",
+  "dpi": 300,
+  "units": "points",
+  "trim": true,
+  "trim_threshold": 248,
+  "trim_padding_px": 8,
+  "items": [
+    {
+      "name": "table1.png",
+      "page": 2,
+      "rect": [320.00, 268.00, 558.67, 302.67]
+    },
+    {
+      "name": "fig1.png",
+      "page": 2,
+      "rect": [326.67, 346.67, 546.67, 460.00]
+    },
+    {
+      "name": "fig2.png",
+      "page": 3,
+      "rect": [58.67, 52.00, 561.33, 149.33]
+    },
+    {
+      "name": "fig3.png",
+      "page": 4,
+      "rect": [53.33, 53.33, 550.67, 210.67]
+    },
+    {
+      "name": "fig4.png",
+      "page": 6,
+      "rect": [53.33, 53.33, 545.33, 242.00]
+    },
+    {
+      "name": "fig5.png",
+      "page": 7,
+      "rect": [333.33, 60.00, 544.00, 169.33]
+    },
+    {
+      "name": "table3.png",
+      "page": 5,
+      "rect": [321.33, 286.67, 560.00, 402.67]
+    },
+    {
+      "name": "table4.png",
+      "page": 6,
+      "rect": [53.33, 269.33, 281.33, 333.33]
+    },
+    {
+      "name": "table5.png",
+      "page": 6,
+      "rect": [321.33, 269.33, 560.00, 333.33]
+    },
+    {
+      "name": "table6.png",
+      "page": 7,
+      "rect": [65.33, 53.33, 282.67, 124.67]
+    },
+    {
+      "name": "table7.png",
+      "page": 7,
+      "rect": [73.33, 188.00, 276.00, 258.67]
+    }
+  ]
+}

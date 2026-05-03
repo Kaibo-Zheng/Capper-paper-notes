@@ -1,0 +1,51 @@
+{
+  "pdf": "paper.pdf",
+  "output_dir": "figures",
+  "dpi": 300,
+  "units": "points",
+  "trim": true,
+  "trim_threshold": 248,
+  "trim_padding_px": 8,
+  "items": [
+    {
+      "name": "fig1.png",
+      "page": 2,
+      "rect": [106.67, 85.33, 506.67, 215.33]
+    },
+    {
+      "name": "fig2.png",
+      "page": 3,
+      "rect": [136.67, 85.33, 478.67, 298.67]
+    },
+    {
+      "name": "fig3.png",
+      "page": 5,
+      "rect": [142.67, 89.33, 473.33, 264.67]
+    },
+    {
+      "name": "table1.png",
+      "page": 6,
+      "rect": [113.33, 78.67, 494.67, 182.67]
+    },
+    {
+      "name": "table2.png",
+      "page": 7,
+      "rect": [140.00, 78.67, 470.67, 188.00]
+    },
+    {
+      "name": "table3.png",
+      "page": 7,
+      "rect": [174.67, 228.00, 437.33, 290.67]
+    },
+    {
+      "name": "table4.png",
+      "page": 8,
+      "rect": [106.67, 78.67, 501.33, 172.00]
+    },
+    {
+      "name": "fig4.png",
+      "page": 8,
+      "rect": [133.33, 212.00, 481.33, 328.00]
+    }
+  ]
+}

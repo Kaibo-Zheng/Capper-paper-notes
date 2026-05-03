@@ -120,49 +120,52 @@ Each note should ideally include:
 
 | Paper | Venue | Note |
 |-------|-------|------|
-| GAN | NeurIPS 2014 | [MLLM/GAN](./MLLM/GAN/README.md) |
-| Transformer | NeurIPS 2017 | [MLLM/Transformer](./MLLM/Transformer/README.md) |
-| RAG | NeurIPS 2020 | [MLLM/RAG](./MLLM/RAG/README.md) |
-| CLIP | ICML 2021 | [MLLM/CLIP](./MLLM/CLIP/README.md) |
-| Densing Law of LLMs | Nature Machine Intelligence 2025 | [MLLM/DensingLaw](./MLLM/DensingLaw/README.md) |
+| GAN | NeurIPS 2014 | [paper/MLLM/GAN](./paper/MLLM/GAN/README.md) |
+| Transformer | NeurIPS 2017 (Spotlight) | [paper/MLLM/Transformer](./paper/MLLM/Transformer/README.md) |
+| RAG | NeurIPS 2020 | [paper/MLLM/RAG](./paper/MLLM/RAG/README.md) |
+| CLIP | ICML 2021 (Oral) | [paper/MLLM/CLIP](./paper/MLLM/CLIP/README.md) |
+| Densing Law of LLMs | Nature Machine Intelligence 2025 | [paper/MLLM/DensingLaw](./paper/MLLM/DensingLaw/README.md) |
 
 ### Vision-Language-Action / Embodied AI
 
 | Paper | Venue | Note |
 |-------|-------|------|
-| pi0.6 | arXiv 2025 | [VLA/pi0.6](./VLA/pi0.6/README.md) |
+| RT-2 | CoRL 2023 | [paper/VLA/RT-2](./paper/VLA/RT-2/README.md) |
+| pi0.6 | arXiv 2025 | [paper/VLA/pi0.6](./paper/VLA/pi0.6/README.md) |
 
 ### AI Agents / Research Automation
 
 | Paper | Venue | Note |
 |-------|-------|------|
-| ReAct | ICLR 2023 | [Agents/ReAct](./Agents/ReAct/README.md) |
-| AI Scientist | Nature 2026 | [Agents/AI-Scientist](./Agents/AI-Scientist/README.md) |
+| ReAct | ICLR 2023 (Top 5%) | [paper/Agents/ReAct](./paper/Agents/ReAct/README.md) |
+| AI Scientist | Nature 2026 | [paper/Agents/AI-Scientist](./paper/Agents/AI-Scientist/README.md) |
 
 ### Reinforcement Learning
 
 | Paper | Venue | Note |
 |-------|-------|------|
-| DQN | Nature 2015 | [RL/DQN](./RL/DQN/README.md) |
+| DQN | Nature 2015 | [paper/RL/DQN](./paper/RL/DQN/README.md) |
+| PPO | arXiv 2017 | [paper/RL/PPO](./paper/RL/PPO/README.md) |
 
 ### AI for Science
 
 #### Nucleic Acid
 
 Ordered roughly from earlier to later work.
-Common mRNA metrics note: [AI4S/NucleicAcid/README.md](./AI4S/NucleicAcid/README.md).
+Common mRNA metrics note: [paper/AI4S/NucleicAcid/README.md](./paper/AI4S/NucleicAcid/README.md).
 
 | Paper | Venue | Note |
 |-------|-------|------|
-| LinearDesign | Nature 2023 | [AI4S/NucleicAcid/LinearDesign](./AI4S/NucleicAcid/LinearDesign/README.md) |
-| UTR-LM | Nature Machine Intelligence 2024 | [AI4S/NucleicAcid/UTR-LM](./AI4S/NucleicAcid/UTR-LM/README.md) |
-| mRNABERT | Nature Communications 2025 | [AI4S/NucleicAcid/mRNABert](./AI4S/NucleicAcid/mRNABert/README.md) |
-| mRNA2vec | AAAI 2025 | [AI4S/NucleicAcid/mRNA2vec](./AI4S/NucleicAcid/mRNA2vec/README.md) |
-| CodonFM | Preprint 2025 | [AI4S/NucleicAcid/CodonFM](./AI4S/NucleicAcid/CodonFM/README.md) |
-| GEMORNA | Science 2025 | [AI4S/NucleicAcid/GEMORNA](./AI4S/NucleicAcid/GEMORNA/README.md) |
-| DNA-Diffusion | Nature Genetics 2026 | [AI4S/NucleicAcid/DNA-Diffusion](./AI4S/NucleicAcid/DNA-Diffusion/README.md) |
-| RMSAGen | AAAI 2026 | [AI4S/NucleicAcid/RMSAGen](./AI4S/NucleicAcid/RMSAGen/README.md) |
-| SOLD | AAAI 2026 | [AI4S/NucleicAcid/SOLD](./AI4S/NucleicAcid/SOLD/README.md) |
+| LinearDesign | Nature 2023 | [paper/AI4S/NucleicAcid/LinearDesign](./paper/AI4S/NucleicAcid/LinearDesign/README.md) |
+| UTR-LM | Nature Machine Intelligence 2024 | [paper/AI4S/NucleicAcid/UTR-LM](./paper/AI4S/NucleicAcid/UTR-LM/README.md) |
+| mRNABERT | Nature Communications 2025 | [paper/AI4S/NucleicAcid/mRNABert](./paper/AI4S/NucleicAcid/mRNABert/README.md) |
+| mRNA2vec | AAAI 2025 | [paper/AI4S/NucleicAcid/mRNA2vec](./paper/AI4S/NucleicAcid/mRNA2vec/README.md) |
+| CodonFM | Preprint 2025 | [paper/AI4S/NucleicAcid/CodonFM](./paper/AI4S/NucleicAcid/CodonFM/README.md) |
+| GEMORNA | Science 2025 | [paper/AI4S/NucleicAcid/GEMORNA](./paper/AI4S/NucleicAcid/GEMORNA/README.md) |
+| IRESFramework | Nature Machine Intelligence 2026 | [paper/AI4S/NucleicAcid/IRESFramework](./paper/AI4S/NucleicAcid/IRESFramework/README.md) |
+| DNA-Diffusion | Nature Genetics 2026 | [paper/AI4S/NucleicAcid/DNA-Diffusion](./paper/AI4S/NucleicAcid/DNA-Diffusion/README.md) |
+| RMSAGen | AAAI 2026 | [paper/AI4S/NucleicAcid/RMSAGen](./paper/AI4S/NucleicAcid/RMSAGen/README.md) |
+| SOLD | AAAI 2026 | [paper/AI4S/NucleicAcid/SOLD](./paper/AI4S/NucleicAcid/SOLD/README.md) |
 
 #### Protein
 
@@ -170,14 +173,17 @@ Ordered roughly from earlier to later work.
 
 | Paper | Venue | Note |
 |-------|-------|------|
-| HEAL | Bioinformatics 2023 | [AI4S/Protein/HEAL](./AI4S/Protein/HEAL/README.md) |
-| GOBoost | Bioinformatics 2025 | [AI4S/Protein/GOBoost](./AI4S/Protein/GOBoost/README.md) |
+| OntoProtein | ICLR 2022 | [paper/AI4S/Protein/OntoProtein](./paper/AI4S/Protein/OntoProtein/README.md) |
+| HEAL | Bioinformatics 2023 | [paper/AI4S/Protein/HEAL](./paper/AI4S/Protein/HEAL/README.md) |
+| ProtCLIP | AAAI 2025 (Oral) | [paper/AI4S/Protein/ProtCLIP](./paper/AI4S/Protein/ProtCLIP/README.md) |
+| GOBoost | Bioinformatics 2025 | [paper/AI4S/Protein/GOBoost](./paper/AI4S/Protein/GOBoost/README.md) |
 
 ### Natural Language Processing
 
 | Paper | Venue | Note |
 |-------|-------|------|
-| Seq2Seq | NeurIPS 2014 | [NLP/Seq2Seq](./NLP/Seq2Seq/README.md) |
+| Seq2Seq | NeurIPS 2014 (Oral) | [paper/NLP/Seq2Seq](./paper/NLP/Seq2Seq/README.md) |
+| BERT | NAACL 2019 (Best Long Paper) | [paper/NLP/BERT](./paper/NLP/BERT/README.md) |
 
 ## License
 
